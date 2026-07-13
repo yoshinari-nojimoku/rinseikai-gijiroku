@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊野林星会 定例会 議事録 2026年7月12日</title>
+<style>
+  :root{
+    --green:#2e6b35; --green-d:#1f4a25; --gold:#b8862b;
+    --bg:#f6f4ee; --card:#ffffff; --ink:#222; --muted:#6b6b6b; --line:#e3ddd0;
+  }
+  *{box-sizing:border-box}
+  body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    color:var(--ink); background:var(--bg); margin:0; line-height:1.75;}
+  .wrap{max-width:880px; margin:0 auto; padding:32px 20px 80px;}
+  header.doc{background:linear-gradient(135deg,var(--green),var(--green-d));
+    color:#fff; border-radius:14px; padding:26px 30px; box-shadow:0 6px 18px rgba(0,0,0,.12);}
+  header.doc .eyebrow{font-size:13px; letter-spacing:.18em; opacity:.85; margin:0 0 6px}
+  header.doc h1{margin:0; font-size:25px; letter-spacing:.02em}
+  header.doc .sub{margin-top:6px; font-size:13.5px; opacity:.9}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 26px; margin:16px 0 6px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 20px;}
+  .meta div{font-size:13.5px}
+  .meta b{color:var(--green-d)}
+
+  /* 決定事項ハイライト */
+  .summary{background:linear-gradient(135deg,#eef3ec,#e3eede); border:1px solid #cfe0c9;
+    border-radius:12px; padding:16px 22px; margin:16px 0;}
+  .summary h2{margin:0 0 8px; font-size:15px; color:var(--green-d); letter-spacing:.05em}
+  .summary ol{margin:0; padding-left:1.3em}
+  .summary li{margin:4px 0; font-size:14px}
+  .summary b{color:var(--green-d)}
+
+  section.card{background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:18px 24px; margin:16px 0; box-shadow:0 2px 6px rgba(0,0,0,.03);}
+  h2.agenda{font-size:17px; color:var(--green-d); margin:0 0 12px; padding-left:12px;
+    border-left:6px solid var(--gold); display:flex; align-items:center; gap:10px;}
+  h2.agenda .no{background:var(--green); color:#fff; font-size:13px; border-radius:50%;
+    width:25px; height:25px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto;}
+  h3{font-size:14px; color:var(--green-d); margin:14px 0 5px}
+  ul{margin:5px 0; padding-left:1.25em}
+  li{margin:3px 0; font-size:14px}
+  .concl{background:#f3f8f1; border-left:4px solid var(--green); padding:7px 12px; margin:8px 0;
+    font-size:14px; border-radius:0 6px 6px 0}
+  .concl b{color:var(--green-d)}
+  .tag{display:inline-block; font-size:11.5px; background:#eef3ec; color:var(--green-d);
+    border:1px solid #d4e2d0; border-radius:20px; padding:1px 9px; margin-left:6px;}
+  table{width:100%; border-collapse:collapse; margin:7px 0; font-size:13.5px}
+  th,td{border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top}
+  th{background:#eef3ec; color:var(--green-d); white-space:nowrap}
+  .action th{background:#fbf3e2; color:var(--gold)}
+  .owner{font-weight:bold; color:var(--green-d); white-space:nowrap}
+  .sched td:first-child{white-space:nowrap; font-weight:bold; color:var(--green-d)}
+  .next{background:linear-gradient(135deg,#fbf6ea,#f3ead2); border:1px solid #e6d9b6;
+    border-radius:12px; padding:16px 22px; margin-top:20px; text-align:center;}
+  .next .label{font-size:12.5px; color:var(--gold); letter-spacing:.1em}
+  .next .date{font-size:21px; font-weight:bold; color:var(--green-d); margin-top:4px}
+  footer.doc{margin-top:28px; font-size:12px; color:var(--muted); text-align:center; line-height:1.7}
+  footer.doc a{color:var(--green)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <p class="eyebrow">熊野林星会　定例会　議事録</p>
+    <h1>2026年7月度 定例会</h1>
+    <div class="sub">熊野材のファンを増やし、地域に貢献する ── 木育・製材・林業の連携活動</div>
+  </header>
+
+  <div class="meta">
+    <div><b>開催日</b>　2026年7月12日（日）</div>
+    <div><b>会体</b>　熊野林星会（三重県熊野市）</div>
+    <div><b>出席（敬称略）</b>　野地伸卓（会長）・野地良成（副会長）・井上陽介（会計）・田中俊輔・樋口健吾・小林（三重県 林業普及員）ほか</div>
+    <div><b>次回</b>　8月2日（日）</div>
+  </div>
+
+  <!-- 決定事項ハイライト -->
+  <div class="summary">
+    <h2>■ 本日の決定事項（要点）</h2>
+    <ol>
+      <li>夏〜秋は<b>セーザイゲームの対外イベントが多数</b>（東海大会7/25・熊野こども大学校8/23–26・VISON8/27–28・アカデミー9/5・三重建築士会10/22・愛媛10/29・アンドパッド11/16）。今年は<b>会長以外のファシリテーターも積極参加</b>する。</li>
+      <li><b>熊野こども大学校（8/23–26）へ協賛金5万円</b>を拠出。お礼状の名義を<b>「井上」→「坪井」</b>に変更する。</li>
+      <li><b>10/29 愛媛県セーザイゲーム（60人）と紀南高校の林業体験は人員を分担</b>（体験＝井上・福島・杉浦・樋口／愛媛＝田中・良成・伸卓）。</li>
+      <li>初参加のファシリテーター向けに<b>セーザイゲームのマニュアル動画を制作</b>（撮影＝木工コンクール当日候補／編集＝小林）。</li>
+      <li><b>森林環境譲与税</b>の有効活用について熊野市へ提案。関係者を集めた<b>対話会を企画</b>し、8/2に次回会議を設定。</li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">1</span>セーザイゲーム関連イベントの日程・体制</h2>
+    <p style="font-size:14px;margin:0 0 6px">夏から秋にかけて対外イベントが集中。今年はファシリテーターの層を広げ、会長以外も積極的に運営に入る方針。全体像は下表のとおり。</p>
+    <table>
+      <tr><th>日程</th><th>イベント</th><th>場所</th><th>担当・備考（敬称略）</th></tr>
+      <tr><td>7/25(土)</td><td>東海大会</td><td>名古屋</td><td>田中・樋口・井上・良成／当日1泊・車で移動</td></tr>
+      <tr><td>8/23(日)–26(水)</td><td>熊野こども大学校</td><td>森林組合ほか</td><td>セーザイゲーム手伝い／小林参加</td></tr>
+      <tr><td>8/27(木)–28(金)</td><td>VISON／遊戯性教材</td><td>VISON（多気町）</td><td>会長・杉浦ほか（下記）</td></tr>
+      <tr><td>9/5(土)</td><td>消費者向けセーザイゲーム</td><td>アカデミー</td><td>詳細は追って打合せ</td></tr>
+      <tr><td>10/22(木)</td><td>三重建築士会 木造設計セミナー</td><td>熊野原木市場 会議場</td><td>会場借用は良成が連絡</td></tr>
+      <tr><td>10/29(木)</td><td>愛媛県セーザイゲーム／紀南高校 林業体験</td><td>愛媛県ほか</td><td>人員分担（下記）</td></tr>
+      <tr><td>11/16(月)</td><td>アンドパッド セーザイゲーム（企業向け）</td><td>—</td><td>8月に打合せ</td></tr>
+    </table>
+
+    <h3>東海大会 <span class="tag">7/25(土)・名古屋</span></h3>
+    <ul>
+      <li>参加：田中・樋口・井上・良成の4名。当日1泊し、車で移動。</li>
+      <li>ホテルは<b>田中が井上と相談して手配</b>する。</li>
+      <li>配布用の<b>材料準備は7/18〜20のいずれか</b>で実施（良成・井上・樋口で調整）。</li>
+    </ul>
+
+    <h3>熊野こども大学校 <span class="tag">8/23(日)–26(水)</span></h3>
+    <ul>
+      <li>セーザイゲーム実施時の手伝いを依頼。会場は森林組合。スタッフは概ね充足。</li>
+      <li>山の部は森林組合の山を使用（自然の家から徒歩可能）。自然の家の山も使えるが木が太い。</li>
+      <li>小林も参加。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>林星会から<b>協賛金5万円</b>を拠出。お礼状の名義を「井上」から「坪井」に変更する。</div>
+
+    <h3>VISON／遊戯性教材 <span class="tag">8/27(木)–28(金)</span></h3>
+    <ul>
+      <li>8/27 13時〜 VISONセーザイゲーム、25名程度。</li>
+      <li>井上は林災防の講師が入ったため参加不可。<b>会長・杉浦の参加決定</b>。</li>
+      <li>小林が木原さん（松阪の普及員）へ、樋口も参加可否を確認する。</li>
+      <li>8/28 遊戯性教材は朝から会長参加。小林は別途、新幹線で移動見込み。</li>
+      <li>ファシリテーター候補として市川さんへの連絡を継続する。</li>
+    </ul>
+
+    <h3>愛媛県セーザイゲーム／紀南高校 林業体験 <span class="tag">10/29(木)</span></h3>
+    <ul>
+      <li>愛媛県セーザイゲーム：8:50〜10:50、60人。同日の紀南高校 林業体験と<b>人を分けて対応</b>。</li>
+      <li>座学の内容は「木材の川上から川下までの流れ」（伐採から建築材として使われるまで）。</li>
+      <li>ポスター製作は小林が担当（良成が資料を共有、過去チラシを参考に7月中に着手）。</li>
+      <li>小林は愛媛への同行を希望。林業体験の参加者は約20名の見込み。</li>
+    </ul>
+    <table>
+      <tr><th>役割</th><th>担当（敬称略）</th></tr>
+      <tr><td>紀南高校 林業体験</td><td>井上 ／ 福島 ／ 杉浦 ／ 樋口</td></tr>
+      <tr><td>愛媛県セーザイゲーム</td><td>田中 ／ 良成 ／ 伸卓</td></tr>
+    </table>
+
+    <h3>アンドパッド セーザイゲーム（企業向け） <span class="tag">11/16(月)</span></h3>
+    <ul>
+      <li>8月にアンドパッドと打合せ予定。中京テレビで実施した企業向けセーザイゲームの実績を活かす。</li>
+      <li>JBNから講師代として2〜3万円をいただける見込み。</li>
+    </ul>
+    <div class="concl"><b>方針：</b>今年はファシリテーターの拡大を図り、初めての担当者も入れて運営する。</div>
+  </section>
+
+  <!-- 2 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">2</span>木工コンクールについて</h2>
+    <ul>
+      <li>配布用木材の準備を<b>8月19〜20日のどちらか</b>で実施。実施日は良成が決める。</li>
+      <li>事前に材料を良成が確認する。</li>
+    </ul>
+    <div class="concl"><b>TODO：</b>マニュアル動画の撮影を木工コンクール当日に行う案あり（下記 議題3・仮）。</div>
+  </section>
+
+  <!-- 3 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">3</span>セーザイゲーム マニュアル動画の制作</h2>
+    <ul>
+      <li>ファシリテーターを新たに要請する場面が増え、初めて担当する人もいる。運営を標準化するため<b>セーザイゲームのマニュアル動画</b>を制作してはどうかと提案。</li>
+      <li>撮影は木工コンクールの日に実施する案（仮）。</li>
+      <li>編集は動画編集ができる小林が担当。良成が撮影素材を小林へ提供する。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>マニュアル動画を制作。撮影＝良成（素材提供）／編集＝小林。</div>
+  </section>
+
+  <!-- 4 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">4</span>森林環境譲与税 有効活用の熊野市への提案</h2>
+    <p style="font-size:14px;margin:0 0 6px">良成より、熊野市における森林環境譲与税の活用状況と課題を説明。小林が全国の活用事例を調査し、熊野市に当てはまる事例を紹介した。（説明用スライドを別途作成済み。）</p>
+    <h3>現場から見た4つの課題</h3>
+    <ul>
+      <li><b>事前手続に偏重</b> ── 意向調査・測量・境界明確化など外部委託が中心。</li>
+      <li><b>川中（製材・加工・流通）への支援がほぼ無い</b> ── 直接支援メニューが乏しい。</li>
+      <li><b>担い手への投資が小さい</b> ── 新規就業・機械・路網など定着施策への配分が少ない。</li>
+      <li><b>公表の遅れ・参画の場がない</b> ── 使途公表が古く、現場の意見を反映する場がない。</li>
+    </ul>
+    <h3>他地域の事例（小林 調査）と提案の方向性</h3>
+    <ul>
+      <li>隣町・紀北町などは造林補助の上乗せ・林業インターン・木質化推進など<b>現場に直接還元</b>している。</li>
+      <li>提案：①担い手への直接投資 ②地域材の出口づくり（公共施設の木質化・製材力強化） ③次世代と地域材をつなぐ木育（みえ森と緑の県民税と役割分担） ④透明性の確保と当事者が参画する活用協議会の設置。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>関係者を集めて話し合う<b>対話会を企画</b>し、市長との連携も視野に進める。企画は良成・小林で推進。<b>8月2日に次回会議</b>を設定。</div>
+  </section>
+
+  <!-- アクション -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">★</span>アクションアイテム</h2>
+    <table class="action">
+      <tr><th>担当</th><th>内容</th><th>関連</th></tr>
+      <tr><td class="owner">良成</td><td>東海大会の材料準備（7/18〜20）を井上・樋口と調整 ／ 市川さんへ連絡継続（ファシリテーター） ／ 10/22 熊野原木市場 会議場の借用連絡 ／ 愛媛ポスター用の資料を小林へ共有 ／ マニュアル動画の撮影素材を小林へ提供 ／ 木工コンクール配布木材の準備日（8/19–20）決定・材料確認 ／ 譲与税 対話会の企画推進</td><td>複数</td></tr>
+      <tr><td class="owner">伸卓</td><td>熊野こども大学校 協賛金5万円・お礼状の名義を「井上→坪井」へ変更 ／ 各イベントの参加調整</td><td>こども大学校ほか</td></tr>
+      <tr><td class="owner">小林</td><td>8/27 ファシリテーターとして木原さん（松阪の普及員）等の参加可否を確認 ／ 愛媛ポスター製作（7月中） ／ マニュアル動画の編集 ／ 譲与税の全国事例調査・対話会推進</td><td>VISON・愛媛・譲与税</td></tr>
+      <tr><td class="owner">田中</td><td>東海大会（7/25）のホテル手配を井上と相談 ／ 11/16 アンドパッド打合せ（8月）</td><td>東海大会・アンドパッド</td></tr>
+      <tr><td class="owner">井上</td><td>東海大会のホテル手配（田中と） ／ 材料準備の協力</td><td>東海大会</td></tr>
+      <tr><td class="owner">全体</td><td>8/2 次回会議で譲与税・各イベントの最終確認</td><td>—</td></tr>
+    </table>
+  </section>
+
+  <!-- 今後の予定 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">📅</span>今後の予定</h2>
+    <table class="sched">
+      <tr><td>7/18〜20</td><td>東海大会 材料準備（いずれか1日）</td></tr>
+      <tr><td>7/25(土)</td><td>東海大会（名古屋）／ 田中・樋口・井上・良成</td></tr>
+      <tr><td>8/2(日)</td><td>次回定例会 兼 譲与税 対話会の打合せ</td></tr>
+      <tr><td>8/19 or 20</td><td>木工コンクール 配布木材の準備</td></tr>
+      <tr><td>8/23(日)〜26(水)</td><td>熊野こども大学校</td></tr>
+      <tr><td>8/27(木)〜28(金)</td><td>VISON セーザイゲーム／遊戯性教材</td></tr>
+      <tr><td>9/5(土)</td><td>アカデミー 消費者向けセーザイゲーム</td></tr>
+      <tr><td>10/22(木)</td><td>三重建築士会 木造設計セミナー（熊野原木市場）</td></tr>
+      <tr><td>10/29(木)</td><td>愛媛県セーザイゲーム／紀南高校 林業体験</td></tr>
+      <tr><td>11/16(月)</td><td>アンドパッド セーザイゲーム（企業向け）</td></tr>
+    </table>
+  </section>
+
+  <div class="next">
+    <div class="label">NEXT MEETING ── 次回定例会</div>
+    <div class="date">2026年 8月2日（日）</div>
+  </div>
+
+  <footer class="doc">
+    熊野林星会 定例会 議事録｜作成 2026年7月13日｜情報源：定例会メモ（7/12）・Zoom会議要約・森林環境譲与税 説明用スライド<br>
+    熊野林星会は熊野材のファンを増やし地域に貢献する林業関係者の会（三重県熊野市）。
+    主な活動：親子木工教室・木工コンクール・木育出前授業・林業体験、三重大学と共同開発の「セーザイゲーム」（2023 ウッドデザイン賞 林野庁長官賞）。<br>
+    参考：<a href="https://rinseikai.net/">rinseikai.net</a>
+  </footer>
+
+</div>
+</body>
+</html>
