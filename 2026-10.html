@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>熊野林星会 定例会 議事録 2026年10月17日</title>
+<style>
+  :root{
+    --green:#2e6b35; --green-d:#1f4a25; --gold:#b8862b; --red:#953525;
+    --bg:#f6f4ee; --card:#ffffff; --ink:#222; --muted:#6b6b6b; --line:#e3ddd0;
+  }
+  *{box-sizing:border-box}
+  body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    color:var(--ink); background:var(--bg); margin:0; line-height:1.75;}
+  .wrap{max-width:880px; margin:0 auto; padding:32px 20px 80px;}
+  header.doc{background:linear-gradient(135deg,var(--green),var(--green-d));
+    color:#fff; border-radius:14px; padding:26px 30px; box-shadow:0 6px 18px rgba(0,0,0,.12);}
+  header.doc .eyebrow{font-size:13px; letter-spacing:.18em; opacity:.85; margin:0 0 6px}
+  header.doc h1{margin:0; font-size:25px; letter-spacing:.02em}
+  header.doc .sub{margin-top:6px; font-size:13.5px; opacity:.9}
+  .backlink{display:inline-block; margin:14px 0 0; font-size:13px; color:var(--green); text-decoration:none}
+  .backlink:hover{text-decoration:underline}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 26px; margin:14px 0 6px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 20px;}
+  .meta div{font-size:13.5px}
+  .meta b{color:var(--green-d)}
+
+  /* 決定事項ハイライト */
+  .summary{background:linear-gradient(135deg,#eef3ec,#e3eede); border:1px solid #cfe0c9;
+    border-radius:12px; padding:16px 22px; margin:16px 0;}
+  .summary h2{margin:0 0 8px; font-size:15px; color:var(--green-d); letter-spacing:.05em}
+  .summary ol{margin:0; padding-left:1.3em}
+  .summary li{margin:4px 0; font-size:14px}
+  .summary b{color:var(--green-d)}
+
+  section.card{background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:18px 24px; margin:16px 0; box-shadow:0 2px 6px rgba(0,0,0,.03);}
+  h2.agenda{font-size:17px; color:var(--green-d); margin:0 0 12px; padding-left:12px;
+    border-left:6px solid var(--gold); display:flex; align-items:center; gap:10px;}
+  h2.agenda .no{background:var(--green); color:#fff; font-size:13px; border-radius:50%;
+    width:25px; height:25px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto;}
+  h3{font-size:14px; color:var(--green-d); margin:14px 0 5px}
+  ul{margin:5px 0; padding-left:1.25em}
+  li{margin:3px 0; font-size:14px}
+  .concl{background:#f3f8f1; border-left:4px solid var(--green); padding:7px 12px; margin:8px 0;
+    font-size:14px; border-radius:0 6px 6px 0}
+  .concl b{color:var(--green-d)}
+  .warn{background:#fdf4f2; border-left:4px solid var(--red); padding:7px 12px; margin:8px 0;
+    font-size:13.5px; border-radius:0 6px 6px 0}
+  .warn b{color:var(--red)}
+  .carry{font-size:13px; color:var(--muted); margin:8px 0 0; padding-left:12px; border-left:3px solid var(--line)}
+  .tag{display:inline-block; font-size:11.5px; background:#eef3ec; color:var(--green-d);
+    border:1px solid #d4e2d0; border-radius:20px; padding:1px 9px; margin-left:6px;}
+  table{width:100%; border-collapse:collapse; margin:7px 0; font-size:13.5px}
+  th,td{border:1px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top}
+  th{background:#eef3ec; color:var(--green-d); white-space:nowrap}
+  .action th{background:#fbf3e2; color:var(--gold)}
+  .check th{background:#fdf0ec; color:var(--red)}
+  .owner{font-weight:bold; color:var(--green-d); white-space:nowrap}
+  .sched td:first-child{white-space:nowrap; font-weight:bold; color:var(--green-d)}
+  .next{background:linear-gradient(135deg,#fbf6ea,#f3ead2); border:1px solid #e6d9b6;
+    border-radius:12px; padding:16px 22px; margin-top:20px; text-align:center;}
+  .next .label{font-size:12.5px; color:var(--gold); letter-spacing:.1em}
+  .next .date{font-size:21px; font-weight:bold; color:var(--green-d); margin-top:4px}
+  footer.doc{margin-top:28px; font-size:12px; color:var(--muted); text-align:center; line-height:1.7}
+  footer.doc a{color:var(--green)}
+
+  /* ---- イラスト ---- */
+  .band{display:block; width:100%; height:56px; margin:10px 0 -4px; border-radius:10px}
+  h2.agenda .illus{margin-left:auto; width:62px; height:62px; flex:0 0 auto}
+  .next .illus{width:64px; height:64px; display:block; margin:0 auto 2px}
+  @media (max-width:560px){
+    h2.agenda .illus{width:46px; height:46px}
+    .band{height:42px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc">
+    <p class="eyebrow">熊野林星会　定例会　議事録</p>
+    <h1>2026年10月度 定例会</h1>
+    <div class="sub">熊野材のファンを増やし、地域に貢献する ── 木育・製材・林業の連携活動</div>
+  </header>
+
+  <a class="backlink" href="index.html">‹ 議事録一覧へ戻る</a>
+
+  <svg class="band" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <rect width="1200" height="120" fill="#eef3ec"/>
+    <path d="M0 120 L120 44 L215 92 L330 30 L455 96 L570 40 L690 100 L800 46 L920 94 L1040 36 L1160 90 L1200 62 L1200 120 Z" fill="#cfe0c9"/>
+    <path d="M0 120 L95 70 L200 110 L310 62 L430 114 L545 66 L665 116 L790 70 L905 112 L1025 64 L1140 108 L1200 84 L1200 120 Z" fill="#a8c8a3"/>
+    <path d="M0 120 L110 96 L235 120 L360 92 L490 120 L615 94 L740 120 L865 92 L990 120 L1115 96 L1200 116 L1200 120 Z" fill="#2e6b35"/>
+  </svg>
+
+  <div class="meta">
+    <div><b>開催日</b>　2026年10月17日（土）8:58〜10:40（1時間42分）／Zoom</div>
+    <div><b>会体</b>　熊野林星会（三重県熊野市）</div>
+    <div><b>出席（敬称略）</b>　野地伸卓（会長）・野地良成（副会長）・井上陽介（三重くまの森林組合）・田中俊輔・樋口健吾・小林（三重県 林業普及員）・hirata satoru</div>
+    <div><b>次回</b>　2026年11月15日（日）8:00 ／ 配送センター集合</div>
+  </div>
+
+  <!-- 決定事項ハイライト -->
+  <div class="summary">
+    <h2>■ 本日の決定事項（要点）</h2>
+    <ol>
+      <li><b>木工コンクールは「個人登録制」の導入を検討</b>。作品提出時にスマホ等で登録してもらい、本人へ直接連絡できる仕組みにする。あわせて<b>学校ごとに担当者を決めてもらう</b>。提出窓口の森林組合は来年も継続。</li>
+      <li><b>愛媛大学セーザイゲーム（10/29）は9時出発</b>。進行を<b>「ゲーム → 結果発表 → 座学」の順に入れ替える案</b>を先方へ伝える。</li>
+      <li><b>アンドパッド セーザイゲーム（11/16）は6名・車で移動</b>。参加者全員がGoogleフォームでスタッフ登録を行う。</li>
+      <li><b>紀南高校の林業体験（10/29）は7名で対応</b>。会場＝熊野原木市場（予約済）、伐採体験の講師＝福島さん、ファシリテーター＝樋口。</li>
+      <li>セーザイゲームは<b>箱が完成</b>。木取りカードの到着待ちで、届き次第<b>11/15（日）8時から配送センターで梱包作業</b>。</li>
+      <li><b>林星会ホームページの再構築が完了</b>（WordPress → HTML構成）。</li>
+      <li>次回定例会は<b>11/15（日）8:00 配送センター集合</b>。梱包作業のあと、アンドパッドへの<b>移動車中で実施</b>。その次は<b>12/13（日）8:00 木挽座</b>。</li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">1</span>セーザイゲームの新規制作<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="箱とカードの梱包作業のイラスト"><rect x="10" y="42" width="42" height="34" rx="4" fill="#b8862b"/><path d="M10 42 L30 30 L72 30 L52 42 Z" fill="#d6ab5e"/><path d="M72 30 L72 64 L52 76 L52 42 Z" fill="#8a6a3a"/><rect x="24" y="48" width="13" height="22" rx="2" fill="#fbf6ea"/><rect x="76" y="34" width="26" height="34" rx="3" fill="#f6f4ee" stroke="#2e6b35" stroke-width="3"/><rect x="84" y="42" width="26" height="34" rx="3" fill="#fff" stroke="#2e6b35" stroke-width="3"/><path d="M90 52 h14 M90 60 h14 M90 68 h8" stroke="#a8c8a3" stroke-width="3" stroke-linecap="round"/><path d="M6 88 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <ul>
+      <li><b>箱が完成</b>した。</li>
+      <li><b>木取りカードがまだ届いていない。</b>届き次第、梱包作業に入る。</li>
+      <li>現在の在庫は<b>4個</b>。追加の販売があれば調整する。</li>
+      <li>愛媛へ新品1セットを持参する案があるが、<b>制作が間に合うかは未確認</b>。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>梱包作業は<b>11月15日（日）朝8時から配送センター</b>で行う。</div>
+    <p class="carry"><b>前回（9/13）からの継続：</b>新規制作の担当は良成・樋口。在庫の棚卸で不足数を出し、発注量を決める方針。</p>
+  </section>
+
+  <!-- 2 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">2</span>木工コンクール 残処理 <span class="tag">担当：井上</span><svg class="illus" viewBox="0 0 120 100" role="img" aria-label="作品の引き取りと登録のイラスト"><circle cx="34" cy="30" r="15" fill="#b8862b"/><circle cx="34" cy="30" r="8" fill="#fbf6ea"/><path d="M27 43 L23 70 L34 62 L45 70 L41 43 Z" fill="#953525"/><rect x="66" y="18" width="34" height="56" rx="6" fill="#f6f4ee" stroke="#2e6b35" stroke-width="3.4"/><rect x="76" y="14" width="14" height="8" rx="3" fill="#2e6b35"/><path d="M74 36 h18 M74 46 h18 M74 56 h11" stroke="#a8c8a3" stroke-width="3.2" stroke-linecap="round"/><circle cx="96" cy="62" r="11" fill="#fbf6ea" stroke="#b8862b" stroke-width="3"/><path d="M91 62 l4 4 7 -8" stroke="#b8862b" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 86 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <h3>現状と課題</h3>
+    <ul>
+      <li>協賛金を<b>市場からまだ受け取っていない</b>。市場とロータリーの2件を今週中に受け取り、精算する。</li>
+      <li>作品は<b>田中が県に送付済み</b>。</li>
+      <li><b>入賞しなかった作品を学校に戻す</b>作業が必要。</li>
+      <li><b>作品の引き取りにほとんど来てもらえない。</b>思った以上に困難だった。</li>
+      <li>今回のコンクールは<b>井上の負担が大きかった</b>。</li>
+    </ul>
+    <h3>うまくいった点</h3>
+    <ul>
+      <li>作品の<b>提出窓口を森林組合にしたのはうまくいった</b>。来年も同じ形で問題ない。</li>
+    </ul>
+    <h3>改善案</h3>
+    <ul>
+      <li><b>個人登録制</b>の導入 ── 作品提出時にスマートフォン等で登録してもらい、本人へ直接連絡できる仕組みにする。</li>
+      <li>学校に電話等で連絡し、<b>学校ごとに担当者を決めてもらって密にやり取りする</b>。</li>
+      <li>個人レベルのやり取りよりも、<b>学校を通じたイベントとして進めるほうが効果的</b>という点で一致。</li>
+      <li><b>事務局の委託</b>も検討してはどうか。</li>
+      <li>作品の数を減らす案（井上）。</li>
+      <li>学校への連絡手段は、チラシ配布・メール・ファックスを検討。山間部の学校との連絡についても言及があった。</li>
+    </ul>
+    <div class="concl"><b>決定：</b><b>個人登録制の導入と、学校側に担当者を置いてもらうこと</b>を軸に改善する。提出窓口は森林組合を継続。残る論点は<b>次回の課題として引き続き検討</b>する。</div>
+    <p class="carry"><b>前回（9/13）からの継続：</b>受賞者エントリーシートは写真を貼り付けて学校へメール送付。9/25夕方に井上・良成・樋口で作品を移動し、未引き取り分は森林組合へ。三重県への二次選考提出は今年からGoogleフォーム対応。</p>
+  </section>
+
+  <!-- 3 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">3</span>愛媛大学 セーザイゲーム <span class="tag">10/29(木)</span><svg class="illus" viewBox="0 0 120 100" role="img" aria-label="大学での講義とゲームのイラスト"><path d="M20 34 L58 18 L96 34 L58 50 Z" fill="#2e6b35"/><path d="M88 38 V54" stroke="#b8862b" stroke-width="3.4" stroke-linecap="round"/><rect x="30" y="44" width="56" height="30" rx="4" fill="#f6f4ee" stroke="#1f4a25" stroke-width="3"/><circle cx="46" cy="58" r="6" fill="#a8c8a3"/><circle cx="70" cy="58" r="6" fill="#b8862b"/><rect x="24" y="76" width="68" height="7" rx="3" fill="#1f4a25"/><path d="M100 18 l2.8 6.4 6.4 2.8 -6.4 2.8 -2.8 6.4 -2.8 -6.4 -6.4 -2.8 6.4 -2.8 Z" fill="#b8862b"/><path d="M6 92 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <table>
+      <tr><th>日時</th><td>2026年10月29日（木）8:50〜11:30（2時間半）</td></tr>
+      <tr><th>会場</th><td>愛媛大学 城北キャンパス 工学部2号館3階 PBL345</td></tr>
+      <tr><th>参加</th><td>計50名予定（学生30名／青年協議会15名／愛媛県林業政策課4名／中予地方局2名／愛媛県木材協会1名）</td></tr>
+      <tr><th>チーム</th><td>10チーム（3人グループと2人グループ）</td></tr>
+      <tr><th>主催</th><td>愛媛木材青年協議会　協力：愛媛大学／愛媛県林業政策課／愛媛県木材協会</td></tr>
+    </table>
+    <h3>移動</h3>
+    <ul>
+      <li>熊野から約7時間。<b>9時出発</b>で合意（前日10/28に松山入り）。</li>
+      <li>10/28 19:00〜 前夜の懇親会に<b>4名で参加</b>（松山麻布）。宿泊はドーミーイン松山。締めの挨拶を引き受けている。</li>
+    </ul>
+    <h3>進行の変更</h3>
+    <ul>
+      <li>タイムスケジュールについて、<b>座学とゲームの順序を入れ替え、結果発表のあとに座学を行う構成</b>にする。この案を先方へ伝える。</li>
+      <li>座学は<b>木造建築と林業の基本概念</b>を学生に教える内容。愛媛県の木材流通については<b>地元の大学と連携して担当してもらう</b>方針。</li>
+    </ul>
+    <h3>機材</h3>
+    <ul>
+      <li>愛媛では<b>2セット必要</b>。うち1つは購入希望があり、使用方法の確認が要る。</li>
+      <li><b>新品1セットを持参して使ってよいか、先方に確認する。</b></li>
+    </ul>
+    <div class="concl"><b>決定：</b>9時出発。進行を<b>「ゲーム → 結果発表 → 座学」</b>に変更する案を先方へ伝える。新品1セットの持参可否をあわせて確認する。</div>
+    <div class="warn"><b>※要確認：</b>出発時刻は事前資料では「8時熊野出発」でしたが、本会議で<b>9時出発</b>に変更されています。参加人数も事前資料は55名、本会議では50名でした。</div>
+  </section>
+
+  <!-- 4 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">4</span>アンドパッド セーザイゲーム <span class="tag">11/16(月)</span><svg class="illus" viewBox="0 0 120 100" role="img" aria-label="東京での企業向け研修のイラスト"><rect x="16" y="30" width="30" height="52" fill="#3d7753"/><rect x="52" y="16" width="32" height="66" fill="#2e6b35"/><rect x="90" y="40" width="20" height="42" fill="#1f4a25"/><rect x="22" y="38" width="7" height="8" fill="#fbf6ea"/><rect x="34" y="38" width="7" height="8" fill="#fbf6ea"/><rect x="22" y="52" width="7" height="8" fill="#fbf6ea"/><rect x="34" y="52" width="7" height="8" fill="#fbf6ea"/><rect x="58" y="24" width="8" height="9" fill="#fbf6ea"/><rect x="70" y="24" width="8" height="9" fill="#fbf6ea"/><rect x="58" y="40" width="8" height="9" fill="#b8862b"/><rect x="70" y="40" width="8" height="9" fill="#fbf6ea"/><rect x="58" y="56" width="8" height="9" fill="#fbf6ea"/><rect x="70" y="56" width="8" height="9" fill="#b8862b"/><rect x="95" y="48" width="10" height="8" fill="#fbf6ea"/><rect x="95" y="62" width="10" height="8" fill="#fbf6ea"/><path d="M8 82 H116" stroke="#8a6a3a" stroke-width="5" stroke-linecap="round"/><path d="M6 92 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <ul>
+      <li>参加は<b>6名</b>：良成・田中・樋口・井上・伸卓・hirata。<b>車で移動</b>する。</li>
+      <li>参加者<b>全員がGoogleフォームでスタッフ登録</b>を行う必要がある。</li>
+      <li>10チーム・<b>150分程度</b>の予定。セーザイゲームとパソコンを用意する。</li>
+      <li>会場のレイアウトと食事についても議論。<b>受付と弁当はアンドパッドが担当</b>。</li>
+      <li>対象は建築業界の関係者。<b>JBN会員とアンドパッドの交流</b>が目的。</li>
+      <li>弁当代の領収書を<b>林星会で出せるように対応</b>する（井上）。</li>
+      <li>樋口は<b>参加可否を週明けすぐに確定して連絡</b>する。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>6名・車で移動。全員がGoogleフォームでスタッフ登録を行う。<b>申込フォームの締切は10月31日。</b></div>
+    <p class="carry"><b>前回（9/13）からの継続：</b>10:30〜／14:00〜の2回開催。当初は11/15（日）に新幹線で東京入りし、伸卓・良成・田中の3名で対応する想定だった（今回、車・6名に変更）。</p>
+    <div class="warn"><b>※要確認：</b>弁当代が、参加申込フォームでは「1,000円程度」、本会議では「約5,000円」と食い違っています。</div>
+  </section>
+
+  <!-- 5 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">5</span>紀南高校 林業体験 <span class="tag">10/29(木)</span><svg class="illus" viewBox="0 0 120 100" role="img" aria-label="高校生の林業体験のイラスト"><path d="M24 20 L38 48 H10 Z" fill="#3d7753"/><path d="M24 38 L42 70 H6 Z" fill="#2e6b35"/><rect x="21" y="70" width="6" height="14" rx="3" fill="#8a6a3a"/><circle cx="68" cy="28" r="9" fill="#1f4a25"/><path d="M54 60 a14 14 0 0 1 28 0 V74 H54 Z" fill="#2e6b35"/><path d="M60 38 h16 l-3 8 h-10 Z" fill="#b8862b"/><circle cx="98" cy="32" r="8" fill="#1f4a25"/><path d="M86 62 a12 12 0 0 1 24 0 V74 H86 Z" fill="#3d7753"/><rect x="50" y="78" width="62" height="7" rx="3" fill="#b8862b"/><path d="M6 92 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <table>
+      <tr><th>会場</th><td>熊野原木市場　<b>予約済み</b></td></tr>
+      <tr><th>人員</th><td><b>7名で行く</b>ことに決定</td></tr>
+      <tr><th>伐採体験の講師</th><td><b>福島さん</b>に依頼済み</td></tr>
+      <tr><th>ファシリテーター</th><td><b>樋口</b></td></tr>
+      <tr><th>送迎</th><td>紀南高校へ迎えに行く必要あり ── 杉浦・井上・飯村さん</td></tr>
+      <tr><th>応援</th><td>飯村さんが参加。熊野の兼務普及員 <b>東さん</b>にも手伝いを依頼済み</td></tr>
+      <tr><th>備品</th><td>マイク・スピーカーは<b>木挽座</b>から持ち込む／缶コーヒー等の差し入れは樋口が準備し熊野原木市場へ持参</td></tr>
+    </table>
+    <ul>
+      <li>当日の<b>質問事項を予め考えておく</b>必要がある（配布するPDF資料を参照）。</li>
+      <li>樋口が<b>杉浦・井上と打ち合わせ</b>を行い、当日のスケジュールと迎えの段取りを確認する。</li>
+      <li>教材はセンター保有のセーザイゲームを使用する。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>7名で対応。会場は予約済みで、講師・ファシリテーター・送迎・会場設営・備品まで分担が固まった。</div>
+    <p class="carry"><b>前回（9/13）からの継続：</b>9:20〜15:00、生徒7名見込み。担当は井上・杉浦・樋口。同日の愛媛県セーザイゲームとは人員を分けて対応する方針。</p>
+    <div class="warn"><b>※要確認：</b>会場セッティングの担当が、会議メモでは「樋口・普及員の東さん」、録音要約では「樋口・井上」となっており食い違っています。</div>
+  </section>
+
+  <!-- 6 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">6</span>その他のイベント<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="各地のイベント予定のイラスト"><rect x="54" y="18" width="8" height="64" rx="4" fill="#8a6a3a"/><path d="M18 22 h36 v15 H18 l-9 -7.5 Z" fill="#2e6b35"/><path d="M62 42 h36 l9 7.5 -9 7.5 H62 Z" fill="#b8862b"/><path d="M22 62 h32 v15 H22 l-9 -7.5 Z" fill="#3d7753"/><path d="M14 88 h92" stroke="#a8c8a3" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="20" r="11" fill="#f6f4ee" stroke="#1f4a25" stroke-width="3"/><path d="M100 13 V20 l5 4" stroke="#1f4a25" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></h2>
+    <table>
+      <tr><th>日程</th><th>イベント</th><th>参加（敬称略）</th><th>内容</th></tr>
+      <tr><td>10/22（木）</td><td>三重県建築士会 木造設計セミナー</td><td>良成 ／ 樋口</td><td>良成がセーザイゲームとマイク等を持ち込む。樋口が<b>小挽き材のセーザイゲーム</b>を用意する。</td></tr>
+      <tr><td>11/1（日）</td><td>勝浦 セーザイゲーム</td><td>伸卓 ／ 良成 ／ 哲平</td><td><b>13時〜17時に決定。最後まで常駐が必要。</b>清水工務店 主催。</td></tr>
+      <tr><td>11/12（木）</td><td>VISON セーザイゲーム</td><td>伸卓 ／ 良成 ／ 樋口</td><td>13:00〜15:00。日帰りでの参加が可能。</td></tr>
+      <tr><td>12/8（火）</td><td>佐野小学校 セーザイゲーム</td><td>伸卓 ／ 松阪の普及員 ／ 小林</td><td>13時から。松阪の手前。生徒40人。</td></tr>
+    </table>
+    <div class="concl"><b>決定：</b>勝浦は<b>13時〜17時</b>で確定し、最後まで常駐する（前回の「朝から・常駐不要」から変更）。</div>
+    <p class="carry"><b>前回（9/13・8/2）からの継続：</b>11/1 勝浦は森林環境譲与税での実施が今回で最後。12/8 の小学校は謝金3万円。</p>
+    <div class="warn"><b>※要確認：</b>12/8の学校名（「佐野小学校」「サナ小学校」）と参加者（メモは井上、録音要約は伸卓）、VISONの参加者（メモは伸卓・良成・樋口、録音要約では杉浦・田中・hirata も検討）が確定していません。</div>
+  </section>
+
+  <!-- 7 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">7</span>ホームページ再構築 ／ 会計・資産運用<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="ホームページと会計のイラスト"><rect x="10" y="18" width="56" height="42" rx="5" fill="#f6f4ee" stroke="#2e6b35" stroke-width="3.2"/><rect x="10" y="18" width="56" height="11" rx="5" fill="#2e6b35"/><circle cx="18" cy="23" r="2.4" fill="#a8c8a3"/><circle cx="26" cy="23" r="2.4" fill="#a8c8a3"/><path d="M30 38 L23 45 L30 52" stroke="#b8862b" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M48 38 L55 45 L48 52" stroke="#b8862b" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="56" cy="56" r="12" fill="#fbf6ea" stroke="#2e6b35" stroke-width="3"/><path d="M50 56 l4 4 8 -9" stroke="#2e6b35" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="74" y="44" width="36" height="32" rx="4" fill="#3d7753"/><rect x="74" y="37" width="36" height="9" rx="4" fill="#2e6b35"/><circle cx="92" cy="60" r="8" fill="#fbf6ea"/><path d="M92 55 v10 M88 58 h8 M88 62 h8" stroke="#b8862b" stroke-width="2.4" stroke-linecap="round"/><path d="M6 88 H114" stroke="#e3ddd0" stroke-width="3.5" stroke-linecap="round"/></svg></h2>
+    <h3>ホームページ</h3>
+    <ul>
+      <li>林星会ホームページの<b>再構築が完了</b>した。<b>WordPress から HTML構成へ変更</b>されたことが報告された。</li>
+    </ul>
+    <h3>会計・資産運用</h3>
+    <ul>
+      <li><b>プール金</b>について、昔からの残高があることが指摘され、<b>最適化と資産の再配分</b>について議論した。</li>
+      <li>井上が<b>新宮信用金庫にあるプール金の残高を確認</b>する。</li>
+      <li>木工コンクールの<b>協賛金を今週中に市場とロータリーから受け取り、精算</b>する（井上）。</li>
+    </ul>
+    <div class="concl"><b>決定：</b>まず<b>残高と協賛金の精算を確定</b>させ、そのうえで資産の再配分を検討する。</div>
+    <p class="carry"><b>前回（9/13）からの継続：</b>協賛金の反映とプール金残高を確定させ、資産運用の可否・リスク・収益想定をまとめた叩き台を作成して次回以降に諮る方針。</p>
+    <div class="warn"><b>※公開前に要判断：</b>本議題には<b>会の資金残高・取引金融機関にかかわる内容</b>が含まれます。Webで公開する場合、この節を掲載するかどうかを事前にご判断ください（金額の具体は本文に記載していません）。</div>
+  </section>
+
+  <!-- アクション -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">★</span>アクションアイテム<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="担当と宿題のイラスト"><rect x="20" y="16" width="66" height="74" rx="6" fill="#f6f4ee" stroke="#b8862b" stroke-width="3.4"/><rect x="40" y="8" width="26" height="14" rx="4" fill="#b8862b"/><path d="M32 40 l5 5 9 -10" stroke="#2e6b35" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 58 l5 5 9 -10" stroke="#2e6b35" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 76 l5 5 9 -10" stroke="#a8c8a3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M54 42 h24 M54 60 h24 M54 78 h16" stroke="#e3ddd0" stroke-width="3.4" stroke-linecap="round"/><path d="M92 30 l3.4 7.6 7.6 3.4 -7.6 3.4 -3.4 7.6 -3.4 -7.6 -7.6 -3.4 7.6 -3.4 Z" fill="#b8862b"/></svg></h2>
+    <table class="action">
+      <tr><th>担当</th><th>内容</th><th>関連</th></tr>
+      <tr><td class="owner">良成</td><td>10/22 セミナーへ<b>セーザイゲームとマイク等を持ち込む</b> ／ 愛媛へ<b>新品1セットを持参して使用できるか先方に確認</b> ／ 愛媛の<b>タイムスケジュール変更（結果発表後に座学）を先方へ伝える</b> ／ アンドパッドのGoogleフォームに登録</td><td>セミナー・愛媛・アンドパッド</td></tr>
+      <tr><td class="owner">伸卓</td><td>アンドパッドのGoogleフォームに登録 ／ セーザイゲームの<b>点数付け・金額決めツールの更新版を共有</b></td><td>アンドパッド・教材</td></tr>
+      <tr><td class="owner">井上</td><td><b>プール金の残高を確認</b>（新宮信用金庫） ／ 木工コンクールの<b>協賛金を今週中に市場とロータリーから受け取り精算</b> ／ <b>入賞しなかった作品を学校に戻す</b> ／ アンドパッドのGoogleフォームに登録 ／ アンドパッドの<b>弁当代の領収書を林星会で出せるよう対応</b></td><td>会計・コンクール・アンドパッド</td></tr>
+      <tr><td class="owner">樋口</td><td>10/22 セミナー用に<b>小挽き材のセーザイゲームを用意</b> ／ アンドパッドの<b>参加可否を週明けすぐに確定して連絡</b> ／ 紀南高校の林業体験に向けて<b>杉浦・井上と打ち合わせ</b>（当日スケジュール・迎えの段取り） ／ 当日の<b>缶コーヒー等の差し入れを準備</b></td><td>セミナー・アンドパッド・林業体験</td></tr>
+      <tr><td class="owner">田中</td><td>西川さんに<b>樋口のTシャツ（サイズM）の受け取り状況を確認</b>し、受け取ってもらう</td><td>その他</td></tr>
+      <tr><td class="owner">全体</td><td><b>11/15（日）8時 配送センターでセーザイゲームの梱包作業</b>（木取りカード到着後） ／ 木工コンクールの改善策（個人登録制・学校担当者）を次回さらに検討</td><td>教材・コンクール</td></tr>
+    </table>
+  </section>
+
+  <!-- 今後の予定 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">📅</span>今後の予定<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="今後の予定のイラスト"><rect x="14" y="20" width="92" height="72" rx="8" fill="#f6f4ee" stroke="#2e6b35" stroke-width="3.4"/><path d="M14 40 h92" stroke="#2e6b35" stroke-width="3.4"/><rect x="14" y="20" width="92" height="20" rx="8" fill="#2e6b35"/><rect x="32" y="10" width="8" height="18" rx="4" fill="#1f4a25"/><rect x="80" y="10" width="8" height="18" rx="4" fill="#1f4a25"/><circle cx="34" cy="54" r="5" fill="#b8862b"/><circle cx="55" cy="54" r="5" fill="#953525"/><circle cx="76" cy="54" r="5" fill="#a8c8a3"/><circle cx="34" cy="74" r="5" fill="#a8c8a3"/><circle cx="55" cy="74" r="5" fill="#b8862b"/><circle cx="76" cy="74" r="5" fill="#a8c8a3"/></svg></h2>
+    <table class="sched">
+      <tr><td>10/22(木)</td><td>三重県建築士会 木造設計セミナー ／ 良成（セーザイゲーム・マイク持込）・樋口（小挽き材）</td></tr>
+      <tr><td>10/28(水)</td><td><b>9:00 熊野出発</b>（約7時間）→ 松山入り ／ 19:00〜 懇親会（松山麻布・4名）</td></tr>
+      <tr><td>10/29(木)</td><td><b>愛媛大学セーザイゲーム</b> 8:50〜11:30（城北キャンパス・50名・10チーム）<br><b>紀南高校 林業体験</b>（熊野原木市場・7名）</td></tr>
+      <tr><td>10/31(土)</td><td><b>アンドパッド セーザイゲーム 参加申込フォーム 締切</b></td></tr>
+      <tr><td>11/1(日)</td><td>勝浦 セーザイゲーム <b>13:00〜17:00</b>（最後まで常駐）／ 伸卓・良成・哲平</td></tr>
+      <tr><td>11/12(木)</td><td>VISON セーザイゲーム 13:00〜15:00 ／ 伸卓・良成・樋口</td></tr>
+      <tr><td>11/15(日)</td><td><b>8:00 配送センター集合 ── セーザイゲーム梱包作業 ＋ 次回定例会（移動車中）</b><br>そのままアンドパッドへ出発</td></tr>
+      <tr><td>11/16(月)</td><td>アンドパッド セーザイゲーム（6名・車）／ 10チーム・150分程度</td></tr>
+      <tr><td>12/8(火)</td><td>佐野小学校 セーザイゲーム 13:00〜（生徒40名）／ 伸卓・松阪の普及員・小林</td></tr>
+      <tr><td>12/13(日)</td><td>定例会 8:00〜（木挽座）</td></tr>
+      <tr><td>1/19(火)</td><td>住林フォレスト セーザイゲーム（コンセプトカフェ）</td></tr>
+    </table>
+  </section>
+
+  <!-- 要確認 -->
+  <section class="card">
+    <h2 class="agenda"><span class="no">?</span>要確認事項（次回までに）<svg class="illus" viewBox="0 0 120 100" role="img" aria-label="要確認事項のイラスト"><circle cx="52" cy="46" r="30" fill="#fdf4f2" stroke="#953525" stroke-width="5"/><path d="M74 68 L104 96" stroke="#953525" stroke-width="9" stroke-linecap="round"/><path d="M44 36 a9 9 0 1 1 9 12 v5" stroke="#953525" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="53" cy="60" r="3.4" fill="#953525"/></svg></h2>
+    <table class="check">
+      <tr><th>項目</th><th>内容</th></tr>
+      <tr><td>hirata satoru さん</td><td>フルネーム・所属の正式表記。アンドパッド（11/16）の参加6名に入っています。</td></tr>
+      <tr><td>愛媛の出発時刻</td><td>事前資料は「8時熊野出発」、本会議は<b>9時出発</b>。9時で記載しました。</td></tr>
+      <tr><td>愛媛の参加人数</td><td>事前資料は55名、本会議は50名。</td></tr>
+      <tr><td>愛媛の進行変更</td><td>「結果発表後に座学」の構成が先方に伝わり、承諾されたか。</td></tr>
+      <tr><td>アンドパッドの弁当代</td><td>申込フォームは「1,000円程度」、本会議は「約5,000円」。</td></tr>
+      <tr><td>林業体験の会場設営</td><td>メモは「樋口・東さん」、録音要約は「樋口・井上」。</td></tr>
+      <tr><td>12/8 の学校名</td><td>「佐野小学校」「サナ小学校」と表記が揺れています。正式名称（佐奈小学校か）。</td></tr>
+      <tr><td>12/8 の参加者</td><td>メモは「井上参加」、録音要約は「伸卓」。</td></tr>
+      <tr><td>VISON（11/12）の参加者</td><td>メモは伸卓・良成・樋口の3名。録音要約では杉浦・田中・hirata も検討に挙がっています。</td></tr>
+      <tr><td>勝浦（11/1）の「哲平」</td><td>フルネーム・所属の正式表記（前回からの持ち越し）。</td></tr>
+      <tr><td>会計・資産運用の節</td><td>Web公開する場合、この節を掲載するかどうかの判断が必要です。</td></tr>
+    </table>
+  </section>
+
+  <div class="next">
+    <svg class="illus" viewBox="0 0 120 100" role="img" aria-label="次回定例会の集合場所のイラスト"><rect x="12" y="40" width="64" height="30" rx="4" fill="#2e6b35"/><path d="M76 48 h20 l12 12 v10 H76 Z" fill="#3d7753"/><rect x="82" y="52" width="14" height="10" rx="2" fill="#fbf6ea"/><circle cx="34" cy="76" r="9" fill="#1f4a25"/><circle cx="34" cy="76" r="4" fill="#a8c8a3"/><circle cx="92" cy="76" r="9" fill="#1f4a25"/><circle cx="92" cy="76" r="4" fill="#a8c8a3"/><rect x="24" y="28" width="32" height="12" rx="3" fill="#b8862b"/><circle cx="104" cy="22" r="12" fill="#fbf6ea" stroke="#b8862b" stroke-width="3.2"/><path d="M104 15 V22 l5 4" stroke="#b8862b" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="label">NEXT MEETING ── 次回定例会</div>
+    <div class="date">2026年 11月15日（日）8:00</div>
+    <div style="font-size:14px;color:#1f4a25;margin-top:4px">配送センター集合 ── セーザイゲーム梱包作業のあと、アンドパッドへの移動車中で定例会<br>その次：12月13日（日）8:00 木挽座</div>
+  </div>
+
+  <footer class="doc">
+    熊野林星会 定例会 議事録｜作成 2026年10月17日｜情報源：定例会メモ「2026-10-17　熊野林星会定例会　議事内容.xlsx」・Zoom AI要約（10/17 10:40 受信）・愛媛大学セーザイゲーム資料まとめ・セーザイゲーム研修 打ち合わせ資料（9/7）・参加申込フォーム・前回議事録（2026-09）<br>
+    <span style="color:#953525">※メモと録音要約で食い違う箇所は本文に断定して書かず、「要確認事項」にまとめています。録音要約の「避難高校」は紀南高校、「気温度」はVISONとして整えました。<b>社外にも見える形で公開する前に、必ず内容のご確認をお願いします。</b></span><br>
+    熊野林星会は熊野材のファンを増やし地域に貢献する林業関係者の会（三重県熊野市）。
+    主な活動：親子木工教室・木工コンクール・木育出前授業・林業体験、三重大学と共同開発の「セーザイゲーム」（2023 ウッドデザイン賞 林野庁長官賞）。<br>
+    参考：<a href="https://rinseikai.net/">rinseikai.net</a>
+  </footer>
+
+</div>
+</body>
+</html>
